@@ -1,0 +1,2 @@
+
+2026-10-06: privacy correction. Identification fields in recording file headers were removed in place from v1.0.0. Version numbers and DOIs are unchanged. See .nemar/corrections.jsonl.
