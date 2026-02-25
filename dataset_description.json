@@ -1,0 +1,20 @@
+{
+    "Name": "MDD Patients and Healthy Controls EEG Data",
+    "BIDSVersion": "1.7.0",
+    "DatasetType": "derivative",
+    "Authors": [
+        "Pierre Guetschel"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "MNE-BIDS",
+            "Version": "0.17.0",
+            "CodeURL": "https://mne.tools/mne-bids/"
+        }
+    ],
+    "SourceDatasets": [
+        {
+            "DOI": "https://doi.org/10.6084/m9.figshare.4244171.v2"
+        }
+    ]
+}

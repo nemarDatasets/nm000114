@@ -1,0 +1,34 @@
+**Introduction:**
+This dataset contains resting-state and task-based EEG recordings from patients diagnosed with Major Depressive Disorder (MDD) and healthy control participants (H). The data was collected to investigate differences in brain electrical activity between MDD patients and healthy individuals across different mental states. The dataset includes 34 participants (19 healthy controls and 15 MDD patients) with recordings during eyes-closed rest, eyes-open rest, and an auditory oddball P300 task. This dataset enables research on neurophysiological biomarkers of depression, comparative studies of brain activity patterns between clinical and healthy populations, and investigation of attentional processing differences in MDD.
+
+**Overview of the experiment:**
+Participants underwent three recording conditions: (1) eyes-closed resting state, (2) eyes-open resting state, and (3) an auditory oddball P300 task. During the resting-state conditions, participants were instructed to sit quietly with either their eyes closed (EC) or eyes open (EO) for the duration of the recording. In the P300 task, participants were presented with auditory stimuli consisting of frequent standard tones (80% probability) and infrequent target tones (20% probability), and were required to mentally count the target tones. EEG was recorded using a 19-channel monopolar EEG system with electrodes positioned according to the International 10-20 system, referenced to linked ears (A1+A2). The sampling rate was 256 Hz. Hardware filters included a high-pass filter at 0.5 Hz and a low-pass filter at 70 Hz, with a 50 Hz notch filter to remove power line noise. All electrode impedances were maintained below 5 kΩ. The recordings were conducted in a controlled environment to minimize external artifacts. One participant (MDD S15) had two separate recording sessions, resulting in duplicate recordings for this subject.
+
+**Description of the preprocessing if any:**
+The original EDF files have been converted to BIDS format. Channel names have been standardized by extracting the electrode names from the original "EEG <electrode>-<reference>" format. Channels originally referenced to the left ear (LE) are now labeled with just the electrode name, while other bipolar derivations (e.g., A2-A1, 23A-23R, 24A-24R) retain their bipolar notation in the format "<electrode1>-<electrode2>". The dataset includes 19 standard EEG channels plus three additional bipolar channels. Subject IDs have been prefixed with their diagnostic group ("H" for healthy controls, "MDD" for Major Depressive Disorder patients) to facilitate group comparisons. All recordings were artifact-free segments selected from longer recording sessions, with epochs containing excessive oculographic or myographic artifacts excluded during initial data collection.
+
+**Description of the event values if any:**
+No events.tsv files are provided as the recordings represent continuous resting-state or task conditions without discrete trial markers. The experimental condition for each recording is indicated by the "task" field in the BIDS filename:
+- "eyesClosed": eyes-closed resting state
+- "eyesOpen": eyes-open resting state  
+- "P300": auditory oddball task (continuous recording during the entire task block)
+
+For the P300 task recordings, while individual stimulus onsets are not marked in events.tsv files, the entire recording represents the period during which participants performed the auditory oddball counting task.
+
+**Citation:**
+When using this dataset, please cite:
+
+1. Mumtaz, W., Xia, L., Ali, S. S. A., Yasin, M. A. M., Hussain, M., & Malik, A. S. (2017). Electroencephalogram (EEG)-based computer-aided technique to diagnose major depressive disorder (MDD). Biomedical Signal Processing and Control, 31, 108-115. https://doi.org/10.1016/j.bspc.2016.07.006
+
+2. Mumtaz, Wajid (2016). MDD Patients and Healthy Controls EEG Data (New). figshare. Dataset. https://doi.org/10.6084/m9.figshare.4244171.v2
+
+**Data curators:**
+Pierre Guetschel (BIDS conversion)
+
+Original data collection team:
+- Wajid Mumtaz (Universiti Teknologi PETRONAS)
+- Likun Xia (Universiti Teknologi PETRONAS)
+- Syed Saad Azhar Ali (Universiti Teknologi PETRONAS)
+- Mohd Azhar Mohd Yasin (Universiti Teknologi PETRONAS)
+- Mazhar Hussain (Universiti Teknologi PETRONAS)
+- Aamir Saeed Malik (Universiti Teknologi PETRONAS)
