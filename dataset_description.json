@@ -2,9 +2,16 @@
     "Name": "MDD Patients and Healthy Controls EEG Data",
     "BIDSVersion": "1.7.0",
     "DatasetType": "derivative",
+    "License": "CC-BY-4.0",
     "Authors": [
-        "Pierre Guetschel"
+        "Wajid Mumtaz",
+        "Likun Xia",
+        "Syed Saad Azhar Ali",
+        "Mohd Azhar Mohd Yasin",
+        "Mazhar Hussain",
+        "Aamir Saeed Malik"
     ],
+    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
     "GeneratedBy": [
         {
             "Name": "MNE-BIDS",
