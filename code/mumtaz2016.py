@@ -122,6 +122,10 @@ def main(
     source_root = Path(source_root).expanduser()
     bids_root = Path(bids_root).expanduser()
 
+    if finalize_only:
+        _finalize_dataset(bids_root, overwrite=overwrite)
+        return
+
     records = list(_get_records(source_root))
 
     # Add bids root:
@@ -132,10 +136,6 @@ def main(
     # sanity check: no duplicate bids paths
     bids_paths = [bids_path.fpath for _, bids_path, _ in records]
     assert len(bids_paths) == len(set(bids_paths)), "Duplicate BIDS paths found"
-
-    if finalize_only:
-        _finalize_dataset(bids_root, overwrite=overwrite)
-        return
 
     for source_path, bids_path, pathology in records:
         raw = read_raw_edf(source_path, preload=False, verbose=False)
@@ -180,8 +180,17 @@ def _finalize_dataset(bids_root: Path, overwrite: bool = False):
         source_datasets=[
             {"DOI": "https://doi.org/10.6084/m9.figshare.4244171.v2"},
         ],
-        authors=["Pierre Guetschel"],
+        authors=[
+            "Wajid Mumtaz",
+            "Likun Xia",
+            "Syed Saad Azhar Ali",
+            "Mohd Azhar Mohd Yasin",
+            "Mazhar Hussain",
+            "Aamir Saeed Malik",
+        ],
+        acknowledgements="Pierre Guetschel updated the data to BIDS format.",
         overwrite=overwrite,
+        data_license="CC-BY-4.0",
     )
     # cleanup macos hidden files
     for macos_file in bids_root.rglob("._*"):
