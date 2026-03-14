@@ -70,7 +70,9 @@ jobs:
                 var m3 = content.match(/^\/annex\/objects\/(.+)$/);
                 if (m3) return m3[1];
               }
-            } catch (e) {}
+            } catch (e) {
+              console.warn("  resolveAnnexKey failed for " + filePath + ": " + e.message);
+            }
             return null;
           }
 
