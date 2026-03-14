@@ -1,0 +1,90 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Wajid Mumtaz": {},
+    "Likun Xia": {},
+    "Syed Saad Azhar Ali": {},
+    "Mohd Azhar Mohd Yasin": {},
+    "Mazhar Hussain": {},
+    "Aamir Saeed Malik": {}
+  },
+  "title": "MDD Patients and Healthy Controls EEG Data",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000114",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000114",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.6084/m9.figshare.4244171.v2",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.1016/j.bspc.2016.07.006",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "sizes": [
+    "756.2 MB (601 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".py",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset comprises resting-state and task-based EEG recordings from 34 participants (19 healthy controls and 15 Major Depressive Disorder patients) collected to investigate neurophysiological differences in brain electrical activity between clinical and healthy populations. Recordings include eyes-closed rest, eyes-open rest, and an auditory oddball P300 task, enabling research on EEG-based biomarkers of depression and attentional processing deficits in MDD.",
+  "methods_description": "EEG was recorded using a 19-channel monopolar system with electrodes positioned according to the International 10-20 system, referenced to linked ears (A1+A2). Sampling rate was 256 Hz with hardware filters: high-pass at 0.5 Hz, low-pass at 70 Hz, and 50 Hz notch filter. Electrode impedances were maintained below 5 kΩ. Participants completed three conditions: eyes-closed resting state, eyes-open resting state, and an auditory oddball P300 task with frequent standard tones (80%) and infrequent target tones (20%), with participants instructed to mentally count targets.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Major Depressive Disorder",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003865"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "P300 event-related potential"
+    },
+    {
+      "term": "auditory oddball task"
+    },
+    {
+      "term": "neurophysiological biomarkers"
+    },
+    {
+      "term": "brain electrical activity"
+    },
+    {
+      "term": "healthy controls"
+    },
+    {
+      "term": "International 10-20 system"
+    },
+    {
+      "term": "artifact rejection"
+    }
+  ],
+  "source_hash": "4ecc0395bd332116977d22ea075efa6d32438809f7d31324a231b74dbda1043a"
+}
