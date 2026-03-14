@@ -29,8 +29,7 @@ jobs:
       - name: Collect git-annex pointer files
         run: |
           # Find symlinks (annex pointers in locked repos)
-          find . -type l -not -path './.git/*' -printf '/%P
-' > /tmp/annex-files.txt 2>/dev/null || true
+          find . -type l -not -path './.git/*' -printf '/%P\n' > /tmp/annex-files.txt 2>/dev/null || true
           # Find small files with annex pointer content (unlocked repos)
           find . -type f -not -path './.git/*' -size -1k -exec grep -l '^/annex/objects/' {} + 2>/dev/null | sed 's|^\./|/|' >> /tmp/annex-files.txt || true
           sort -u /tmp/annex-files.txt -o /tmp/annex-files.txt
@@ -48,8 +47,7 @@ jobs:
 
           # Convert annex file list to JSON array for jq filtering
           if [ -s /tmp/annex-files.txt ]; then
-            jq -R -s 'split("
-") | map(select(length > 0))' /tmp/annex-files.txt > /tmp/annex-files.json
+            jq -R -s 'split("\n") | map(select(length > 0))' /tmp/annex-files.txt > /tmp/annex-files.json
           else
             echo '[]' > /tmp/annex-files.json
           fi
