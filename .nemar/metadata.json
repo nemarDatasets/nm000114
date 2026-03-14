@@ -50,13 +50,11 @@
     ".tsv",
     ".yml"
   ],
-  "description": "This dataset comprises resting-state and task-based EEG recordings from 34 participants (19 healthy controls and 15 Major Depressive Disorder patients) collected to investigate neurophysiological differences in brain electrical activity between clinical and healthy populations. Recordings include eyes-closed rest, eyes-open rest, and an auditory oddball P300 task, enabling research on depression biomarkers and attentional processing deficits in MDD.",
-  "methods_description": "EEG was recorded using a 19-channel monopolar system with electrodes positioned according to the International 10-20 system, referenced to linked ears (A1+A2). Sampling rate was 256 Hz with hardware filters: high-pass at 0.5 Hz, low-pass at 70 Hz, and 50 Hz notch filter. Electrode impedances were maintained below 5 kΩ. Three recording conditions were employed: eyes-closed resting state, eyes-open resting state, and an auditory oddball P300 task with frequent standard tones (80%) and infrequent target tones (20%), with participants instructed to mentally count targets.",
+  "description": "This dataset comprises resting-state and task-based EEG recordings from 34 participants (19 healthy controls and 15 Major Depressive Disorder patients) collected to investigate neurophysiological differences in brain electrical activity between clinical and healthy populations. Recordings include eyes-closed rest, eyes-open rest, and an auditory oddball P300 task, enabling research on EEG-based biomarkers of depression and attentional processing deficits in MDD. One participant (MDD S15) has two separate recording sessions. The dataset has been converted to BIDS format from the original EDF files.",
+  "methods_description": "EEG was recorded using a 19-channel monopolar system with electrodes positioned according to the International 10-20 system, referenced to linked ears (A1+A2). Sampling rate was 256 Hz with hardware filters: high-pass at 0.5 Hz, low-pass at 70 Hz, and 50 Hz notch filter. Electrode impedances were maintained below 5 kΩ. Participants completed three conditions: eyes-closed resting state, eyes-open resting state, and an auditory oddball P300 task with frequent standard tones (80%) and infrequent target tones (20%), with participants instructed to mentally count targets.",
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "EEG"
     },
     {
       "term": "Major Depressive Disorder",
@@ -77,20 +75,6 @@
     },
     {
       "term": "brain electrical activity"
-    },
-    {
-      "term": "depression biomarkers"
-    },
-    {
-      "term": "attentional processing"
-    },
-    {
-      "term": "International 10-20 system"
-    },
-    {
-      "term": "Attention",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
     }
   ],
   "source_hash": "4ecc0395bd332116977d22ea075efa6d32438809f7d31324a231b74dbda1043a"
