@@ -1,27 +1,28 @@
 {
-    "Name": "MDD Patients and Healthy Controls EEG Data",
-    "BIDSVersion": "1.7.0",
-    "DatasetType": "derivative",
-    "License": "CC-BY-4.0",
-    "Authors": [
-        "Wajid Mumtaz",
-        "Likun Xia",
-        "Syed Saad Azhar Ali",
-        "Mohd Azhar Mohd Yasin",
-        "Mazhar Hussain",
-        "Aamir Saeed Malik"
-    ],
-    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
-    "GeneratedBy": [
-        {
-            "Name": "MNE-BIDS",
-            "Version": "0.17.0",
-            "CodeURL": "https://mne.tools/mne-bids/"
-        }
-    ],
-    "SourceDatasets": [
-        {
-            "DOI": "https://doi.org/10.6084/m9.figshare.4244171.v2"
-        }
-    ]
+  "Name": "MDD Patients and Healthy Controls EEG Data",
+  "BIDSVersion": "1.7.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Wajid Mumtaz",
+    "Likun Xia",
+    "Syed Saad Azhar Ali",
+    "Mohd Azhar Mohd Yasin",
+    "Mazhar Hussain",
+    "Aamir Saeed Malik"
+  ],
+  "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
+  "GeneratedBy": [
+    {
+      "Name": "MNE-BIDS",
+      "Version": "0.17.0",
+      "CodeURL": "https://mne.tools/mne-bids/"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "https://doi.org/10.6084/m9.figshare.4244171.v2"
+    }
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000114"
 }
