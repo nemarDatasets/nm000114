@@ -1,30 +1,44 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
+  "title": "MDD Patients and Healthy Controls EEG Data",
+  "description": "Resting-state (eyes-closed and eyes-open) and auditory oddball P300 task EEG recordings from patients with Major Depressive Disorder and healthy control participants. Data were recorded with a 19-channel 10-20 system at 256 Hz to support research on neurophysiological biomarkers of depression and on differences in attentional processing. This BIDS version was converted from the original figshare deposit.",
+  "methods_description": "EEG was recorded with a 19-channel monopolar system placed according to the International 10-20 system, referenced to linked ears (A1+A2), sampled at 256 Hz. Hardware filters were a 0.5 Hz high-pass, 70 Hz low-pass and 50 Hz notch, with impedances below 5 kΩ. Conditions were eyes-closed rest, eyes-open rest, and an auditory oddball task with 80% standard and 20% target tones, in which participants mentally counted the targets. Artifact-free segments were selected from longer recordings.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
-    "Wajid Mumtaz": {},
+    "Wajid Mumtaz": {
+      "orcid": "0000-0001-6468-8666"
+    },
     "Likun Xia": {},
     "Syed Saad Azhar Ali": {},
     "Mohd Azhar Mohd Yasin": {},
     "Mazhar Hussain": {},
     "Aamir Saeed Malik": {}
   },
-  "title": "MDD Patients and Healthy Controls EEG Data",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Major Depressive Disorder"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "auditory oddball"
+    },
+    {
+      "term": "biomarkers"
+    }
   ],
-  "resource_type_specific": "EEG Dataset",
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/nm000114",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000114",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -37,10 +51,25 @@
       "identifier": "10.1016/j.bspc.2016.07.006",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000114",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
   "sizes": [
-    "756.2 MB (601 files)"
+    "721 MB (601 files)"
   ],
   "formats": [
     ".edf",
@@ -49,33 +78,6 @@
     ".py",
     ".tsv",
     ".yml"
-  ],
-  "description": "This dataset comprises resting-state and task-based EEG recordings from 34 participants (19 healthy controls and 15 Major Depressive Disorder patients) collected to investigate neurophysiological differences in brain electrical activity between clinical and healthy populations. Recordings include eyes-closed rest, eyes-open rest, and an auditory oddball P300 task, enabling research on EEG-based biomarkers of depression and attentional processing deficits in MDD. One participant (MDD S15) has two separate recording sessions. The dataset has been converted to BIDS format from the original EDF files.",
-  "methods_description": "EEG was recorded using a 19-channel monopolar system with electrodes positioned according to the International 10-20 system, referenced to linked ears (A1+A2). Sampling rate was 256 Hz with hardware filters: high-pass at 0.5 Hz, low-pass at 70 Hz, and 50 Hz notch filter. Electrode impedances were maintained below 5 kΩ. Participants completed three conditions: eyes-closed resting state, eyes-open resting state, and an auditory oddball P300 task with frequent standard tones (80%) and infrequent target tones (20%), with participants instructed to mentally count targets.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Major Depressive Disorder",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D059265"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "P300 event-related potential"
-    },
-    {
-      "term": "auditory oddball task"
-    },
-    {
-      "term": "neurophysiological biomarkers"
-    },
-    {
-      "term": "brain electrical activity"
-    }
   ],
   "source_hash": "4ecc0395bd332116977d22ea075efa6d32438809f7d31324a231b74dbda1043a"
 }
